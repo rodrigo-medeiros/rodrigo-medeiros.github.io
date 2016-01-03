@@ -1,10 +1,10 @@
-# azat-co or azat.co
+# Rodrigo Medeiros Portfolio
 
-> Azat Mardanov's personal website: projects, books, links to social media profiles.
+> Rodrigo Medeiro's personal portfolio: about me, projects and social media profiles.
 
-<http://azat.co>
+<http://rodrigo-medeiros.github.io>
 
-## Build With
+## Built With
 
-* Twitter Bootstrap
-* Sumlime Text 2
+* Bootstrap
+* Sumlime Text
