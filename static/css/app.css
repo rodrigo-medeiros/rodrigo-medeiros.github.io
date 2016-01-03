@@ -40,7 +40,7 @@ a:hover {
   padding-bottom: 90px;
 }
 
-#projects p:nth-child(1), #social p:nth-child(1) {
+#about p:nth-child(1), #projects p:nth-child(1), #social p:nth-child(1) {
   padding-top: 40px;
 }
 
