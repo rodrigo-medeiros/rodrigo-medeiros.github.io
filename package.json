@@ -1,0 +1,25 @@
+{
+  "name": "rodrigo-medeiros-portfolio",
+  "version": "1.0.0",
+  "description": "Rodrigo Medeiro's personal portfolio: about me, projects and social media profiles.",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --files '**/*.js, **/*.html, **/*.css' --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigo-medeiros/rodrigo-medeiros.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Rodrigo Medeiros <rodrigo.mangue@gmail.com> (https://github.com/rodrigo-medeiros)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrigo-medeiros/rodrigo-medeiros.github.io/issues"
+  },
+  "homepage": "https://github.com/rodrigo-medeiros/rodrigo-medeiros.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "2.11.0"
+  }
+}
