@@ -5,7 +5,12 @@ body {
 }
 
 body {
+  font-size: 16px;
   font-family: "Courier New", monospace;
+}
+
+a {
+  color: #434343;
 }
 
 a:hover {
