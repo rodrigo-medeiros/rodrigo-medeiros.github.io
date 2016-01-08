@@ -7,4 +7,4 @@
 ## Built With
 
 * Bootstrap
-* Sumlime Text
+* Sublime Text
