@@ -1,0 +1,57 @@
+$font-stack:  "Raleway", sans-serif;
+$dark-grey:   #3C3F42;
+$light-green: #78C932;
+$light-white: #F4FAFF;
+$dark-white:  #EFF2EF;
+$dark-green:  #218380;
+
+html,body {
+  font-family: $font-stack;
+  height: 100%;
+}
+
+#home {
+  h1 {
+    span {
+      font-size: 42px;
+
+      strong { font-size: 46px; }
+    }
+  }
+}
+
+.container-fluid { height: 100%; }
+
+.fill {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 10px;
+}
+
+.gray-background {
+  background-color: $dark-grey;
+}
+
+.light-white-font {
+  color: $light-white;
+}
+
+.dark-white-background {
+  background-color: $dark-white;
+}
+
+.light-green-font {
+  color: $light-green;
+}
+
+.dark-green-font {
+  color: $dark-green;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

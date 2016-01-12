@@ -1,0 +1,58 @@
+/*
+  dark-grey:   #3C3F42
+  light-green: #78C932
+  light-white: #F4FAFF
+  dark-white:  #EFF2EF
+  dark-green:  #218380
+*/
+
+html,body {
+  font-family: "Raleway", sans-serif;
+  height:100%;
+}
+
+#home h1 span {
+  font-size: 42px;
+}
+
+#home h1 span strong {
+  font-size: 46px;
+}
+
+.container-fluid {
+  height:100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 10px;
+}
+
+.gray-background {
+  background-color: #3C3F42;
+}
+
+.light-white-font {
+  color: #F4FAFF;
+}
+
+.dark-white-background {
+  background-color: #EFF2EF;
+}
+
+.light-green-font {
+  color: #78C932;
+}
+
+.dark-green-font {
+  color: #218380;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
