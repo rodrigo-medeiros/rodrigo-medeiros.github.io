@@ -7,22 +7,34 @@
     <title>Rodrigo Medeiros</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700' rel='stylesheet' type='text/css'>
   	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:200,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
   </head>
 
   <body>
     <div class="container-fluid gray-background light-white-font">
-      <div id="home" class="span6 fill">
+      <nav id="sidebar" class="hidden">
+        <ul class="nav nav-pills nav-stacked list-group">
+          <li class="list-group-item text-uppercase">Home</li>
+          <li class="list-group-item text-uppercase">Projects</li>
+          <li class="list-group-item text-uppercase">About</li>
+          <li class="list-group-item text-uppercase">Contact</li>
+        </ul>
+      </nav>
+      <div id="menu-button">
+        <i class="fa fa-bars fa-3x light-green-font"></i>
+      </div>
+      <header id="home" class="span6 fill">
           <h1 class="center text-center col-md-4">
-            <span>Hi, my name is <strong class="light-green-font">Rodrigo Medeiros</strong>. I'm a software engineer who lives in Brazil.</span>
+            <span>Hi, my name is <strong class="light-green-font">Rodrigo Medeiros</strong>. I'm a software engineer living in Brazil.</span>
           </h1>
-      </div>
-      <div id="about" class="span6 fill dark-white-background">
-          <h1 class="center light-green-font">Hi, my name is Jonas. I'm a software developer who lives in Brazil.</h1>
-      </div>
+      </header>
+      <section id="about" class="span6 fill dark-white-background">
+          <h1 class="center light-green-font">Hi, my name is Jonas. I'm a software developer living in Brazil.</h1>
+      </section>
     </div>
     <!-- Bootstrap core JavaScript
       ================================================== -->
@@ -30,6 +42,6 @@
     <script src="dist/js/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="dist/js/bundle.js"></script>
   </body>
 </html>

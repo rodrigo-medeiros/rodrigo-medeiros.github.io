@@ -10,12 +10,43 @@ html,body {
   height: 100%;
 }
 
-#home {
+#menu-button {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+}
+
+#sidebar {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  top: 0;
+  left: 0;
+  background-color: $dark-green;
+  ul {
+    position: relative;
+    top: 9%;
+    background-color: $dark-green;
+    li {
+      padding-top: 19px;
+      padding-left: 27px;
+      border-style: none;
+      font-size: 22px;
+      font-weight: 400;
+      background-color: $dark-green;
+    }
+  }
+}
+
+header {
   h1 {
     span {
+      font-weight: 400;
       font-size: 42px;
 
-      strong { font-size: 46px; }
+      strong {
+        font-size: 46px;
+      }
     }
   }
 }
