@@ -5,43 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rodrigo Medeiros</title>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700' rel='stylesheet' type='text/css'>
-  	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:200,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:100,200,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
   </head>
 
   <body>
-    <div class="container-fluid gray-background light-white-font">
+    <div class="container-fluid light-white-font">
+      <div id="menu-button">
+        <i class="fa fa-bars fa-3x middle-blue-font"></i>
+      </div>
       <nav id="sidebar" class="hidden">
         <ul class="nav nav-pills nav-stacked list-group">
-          <li class="list-group-item text-uppercase">Home</li>
-          <li class="list-group-item text-uppercase">Projects</li>
-          <li class="list-group-item text-uppercase">About</li>
-          <li class="list-group-item text-uppercase">Contact</li>
+          <li class="text-uppercase"><a href="#home">Home</a></li>
+          <li class="text-uppercase"><a href="#projects">Projects</a></li>
+          <li class="text-uppercase"><a href="#about">About</a></li>
+          <li class="text-uppercase"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div id="menu-button">
-        <i class="fa fa-bars fa-3x light-green-font"></i>
-      </div>
-      <header id="home" class="span6 fill">
-          <h1 class="center text-center col-md-4">
-            <span>Hi, my name is <strong class="light-green-font">Rodrigo Medeiros</strong>. I'm a software engineer living in Brazil.</span>
+      <header id="home" class="fill dark-gray-background">
+          <h1 class="center text-center col-sm-8">
+            <p>Hi, my name is <strong class="middle-blue-font">Rodrigo Medeiros</strong>.</p>
+            <p>I'm a software engineer living in Brazil.</p>
           </h1>
       </header>
-      <section id="about" class="span6 fill dark-white-background">
-          <h1 class="center light-green-font">Hi, my name is Jonas. I'm a software developer living in Brazil.</h1>
+      <section id="projects" class="fill">
+        <h2 class="text-uppercase dark-gray-font">Projects</h2>
+        <div>
+          <ul class="list-inline">
+            <li>
+              <div class="thumbnail">
+                <a href="https://www.npmjs.com/package/delatinise-cli">
+                  <img src="dist/img/npm-delatinise-cli-300x225.png" />
+                </a>
+                <div class="caption text-left">
+                  <h3>delatinise-cli</h3>
+                  <p>A CLI tool to remove accents from text files.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumbnail">
+                <a href="https://www.npmjs.com/package/coderbits">
+                  <img src="dist/img/npm-coderbits-300x225.png" />
+                </a>
+                <div class="caption text-left">
+                  <h3>coderbits</h3>
+                  <p>A wrapper for the coderbits API.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumbnail">
+                <a href="https://www.npmjs.com/package/file-appender">
+                  <img src="dist/img/npm-file-appender-300x225.png" />
+                </a>
+                <div class="caption text-left">
+                  <h3>file-appender</h3>
+                  <p>Pipe a list of files to a transform stream.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about">
+        <h2 class="text-uppercase dark-gray-font">About me</h2>
+        <article class="row">
+          <div class="col-sm-6 col-sm-offset-3 col-md-3">
+            <p class="dark-gray-font text-justify">
+              I'm a happy family guy, bacon addicted, who loves science and technology in general. Mostly, I try to learn everything I can. In my opinion, getting your hands dirty is the best way to learn a new skill.
+            </p>
+            <p class="dark-gray-font text-justify">
+              Most of my coding experience were built upon the Java/Oracle DB stack, but I have played in the past with some other things like Smalltalk, C, Delphi, Matlab. A couple years ago I started to play with Node.js to take the rust off my Javascript skills, and I'm still loving it.
+            </p>
+          </div>
+          <div class="col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+            <p class="dark-gray-font text-justify">
+              Fullstack web development and distributed systems are the two things that have grabbed my attention recently.
+            </p>
+            <p class="dark-gray-font text-justify">
+              I'm a hard worker, committed and self learner. Definitely, I'm not a <a href="http://www.marcensign.com/stop-calling-yourself-a-guru-jedi-rock-star-and-ninja-unless-you-are-a-guru-jedi-rock-star-or-ninja/">guru jedi rockstar ninja</a>, but I always get my stuff done.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="contact">
+        <article>
+          <p class="text-center light-white-font">
+            Wanna talk? <a href="mailto:rodrigo.mangue@gmail.com" class="middle-blue-font">Email me.</a>
+          </p><br />
+          <p class="light-white-font">
+            <a class="dark-gray-font" href="http://www.twitter.com/somerodrigo" title="I'm still getting the hang of it" target="twitter"><strong><i class="fa fa-twitter"></i></strong></a>
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a class="dark-gray-font" href="https://br.linkedin.com/in/somerodrigo" title="My previous experiences" target="linkedin"><strong><i class="fa fa-linkedin"></i></strong></a>
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a class="dark-gray-font" href="https://github.com/rodrigo-medeiros" title="My code: see for yourself" target="github"><strong><i class="fa fa-github"></i></strong></a>
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a class="dark-gray-font" href="http://stackoverflow.com/users/2241993/rodrigo-medeiros" title="Me trying to help" target="so"><strong><i class="fa fa-stack-overflow"></i></strong></a>
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a class="dark-gray-font" href="http://codepen.io/rodrigo-medeiros/" title="My pens" target="codepen"><strong><i class="fa fa-codepen"></i></strong></a>
+          </p>
+        </article>
       </section>
     </div>
-    <!-- Bootstrap core JavaScript
-      ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="dist/js/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/bundle.js"></script>
   </body>
 </html>

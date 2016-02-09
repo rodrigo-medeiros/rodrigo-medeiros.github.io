@@ -1,48 +1,221 @@
-$font-stack:  "Raleway", sans-serif;
-$dark-grey:   #3C3F42;
-$light-green: #78C932;
-$light-white: #F4FAFF;
-$dark-white:  #EFF2EF;
-$dark-green:  #218380;
+$font-base:  "Raleway", sans-serif;
+$font-about:  "Droid Serif", sans-serif;
 
-html,body {
-  font-family: $font-stack;
+$dark-grey:   #222426;
+$middle-blue: #00f6ed;
+$light-white: #fdfdff;
+$light-blue:  #edf9f9;
+$dark-blue:  #546a7b;
+$sidebar-color: rgba($dark-blue, .95);
+$sidebar-item-color: rgba($dark-blue, 0);
+
+$phone: "(min-width: 320px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+html,
+body {
+  font-family: $font-base;
+  font-smoothing: antialiased;
   height: 100%;
 }
 
-#menu-button {
-  position: fixed;
-  top: 3%;
-  left: 3%;
+a {
+  text-decoration: none !important;
 }
 
 #sidebar {
-  position: fixed;
+  animation-duration: .2s;
+  background-color: $sidebar-color;
   height: 100%;
-  width: 300px;
-  top: 0;
   left: 0;
-  background-color: $dark-green;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 1;
+
   ul {
+    display: table;
     position: relative;
-    top: 9%;
-    background-color: $dark-green;
+    top: 6em;
+    width: 100%;
+
     li {
-      padding-top: 19px;
-      padding-left: 27px;
       border-style: none;
-      font-size: 22px;
+      display: table;
+      font-size: 20px;
       font-weight: 400;
-      background-color: $dark-green;
+      height: 60px;
+      margin-bottom: 5px;
+      width: 100%;
+
+      &:hover {
+        background-color: $dark-grey !important;
+        color: $dark-blue !important;
+      }
+
+      a {
+        background-color: $sidebar-item-color;
+        color: inherit;
+        display: table-cell;
+        height: 100%;
+        padding-left: 1.2em;
+        text-decoration: none;
+        transform: translate(-5px, 0);
+        transition: .6s ease-out;
+        vertical-align: middle;
+        width: 100%;
+
+        &:hover {
+          color: $middle-blue !important;
+          transform: translate(5px, 0);
+          transition: .2s linear;
+        }
+      }
     }
   }
 }
 
-header {
-  h1 {
-    span {
-      font-weight: 400;
-      font-size: 42px;
+#projects {
+  background-color: $light-blue;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 80px 0;
+
+  h2 {
+    display: block;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 !important;
+    margin-after: .83em;
+    margin-before: .83em;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+
+    &after {
+      bottom: 30px;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 100px;
+    }
+  }
+
+  div {
+    margin: 0 auto;
+    padding: 0;
+
+    ul {
+      display: block;
+      margin: 0;
+      position: relative;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        text-align: left;
+
+        img {
+          margin: 0;
+
+        }
+
+        div {
+          margin: 7px;
+          padding-bottom: 1px;
+
+        }
+      }
+    }
+  }
+}
+
+#about {
+  background-color: $light-white;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 80px 0;
+
+  h2 {
+    display: block;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 !important;
+    margin-after: .83em;
+    margin-before: .83em;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+
+    &after {
+      bottom: 30px;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 100px;
+    }
+  }
+
+  article {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    margin: 0;
+    min-width: 300px;
+    width: 100%;
+
+    div {
+      font-family: $font-about;
+      font-weight: 100;
+      text-indent: 25px;
+    }
+  }
+}
+
+#contact {
+  background-color: $dark-grey;
+  font-size: 25px;
+
+  article {
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 80px 0;
+    text-align: center;
+    width: 50%;
+
+    strong {
+      color: $middle-blue;
+    }
+  }
+}
+
+@media #{$desktop} {
+  #menu-button {
+    font-size: 14px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  header {
+    h1 {
+
+      p {
+        font-size: 42px;
+        font-weight: 400;
+      }
 
       strong {
         font-size: 46px;
@@ -51,38 +224,105 @@ header {
   }
 }
 
-.container-fluid { height: 100%; }
+@media #{$tablet} {
+  #menu-button {
+    font-size: 12px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  header {
+    h1 {
+
+      p {
+        font-size: 38px;
+        font-weight: 400;
+      }
+
+      strong {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+@media #{$phone} {
+  #menu-button {
+    font-size: 10px;
+    left: 2.5em;
+    position: fixed;
+    top: 2.5em;
+    z-index: 2;
+  }
+
+  header {
+    h1 {
+
+      p {
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      strong {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
 
 .fill {
-  width: 100%;
   height: 100%;
   min-height: 100%;
   padding: 10px;
+  width: 100%;
 }
 
-.gray-background {
+.dark-gray-background {
   background-color: $dark-grey;
+}
+
+.dark-gray-font {
+  color: $dark-grey;
 }
 
 .light-white-font {
   color: $light-white;
 }
 
-.dark-white-background {
-  background-color: $dark-white;
+.light-blue-background {
+  background-color: $light-blue;
 }
 
-.light-green-font {
-  color: $light-green;
+.middle-blue-font {
+  color: $middle-blue !important;
 }
 
-.dark-green-font {
-  color: $dark-green;
+.middle-blue-background {
+  background-color: $middle-blue;
+}
+
+.dark-blue-font {
+  color: $dark-blue;
 }
 
 .center {
+  left: 50%;
   position: relative;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.thumbnail {
+  border-style: none;
+  margin: auto;
+  padding: 0;
 }
