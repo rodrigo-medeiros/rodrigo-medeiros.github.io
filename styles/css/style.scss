@@ -78,9 +78,7 @@ a {
 
 #projects {
   background-color: $light-blue;
-  height: auto;
   margin: 0;
-  overflow: hidden;
   padding: 80px 0;
 
   h2 {
@@ -138,9 +136,9 @@ a {
 
 #about {
   background-color: $light-white;
-  height: auto;
+  height: 70%;
   margin: 0;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 80px 0;
 
   h2 {
@@ -167,27 +165,22 @@ a {
     }
   }
 
-  article {
+  div {
+    font-family: $font-about;
     font-size: 18px;
+    font-weight: 100;
     letter-spacing: 1px;
     line-height: 1.4em;
-    margin: 0;
-    min-width: 300px;
-    width: 100%;
-
-    div {
-      font-family: $font-about;
-      font-weight: 100;
-      text-indent: 25px;
-    }
+    text-indent: 25px;
   }
 }
 
 #contact {
   background-color: $dark-grey;
   font-size: 25px;
+  height: 30%;
 
-  article {
+  div {
     margin: 0 auto;
     min-width: 300px;
     padding: 80px 0;
@@ -274,16 +267,12 @@ a {
 
 .container-fluid {
   height: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  width: 100%;
+  padding: 0;
 }
 
 .fill {
   height: 100%;
   min-height: 100%;
-  padding: 10px;
-  width: 100%;
 }
 
 .dark-gray-background {
@@ -325,4 +314,14 @@ a {
   border-style: none;
   margin: auto;
   padding: 0;
+}
+
+.footer {
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+}
+
+#footer {
+  height: 70%;
 }

@@ -1,5 +1,6 @@
 $("document").ready(function() {
   handleShowHideSidebar();
+  handleEscKey();
   handleSideBarClick();
 });
 
@@ -35,5 +36,20 @@ function handleSideBarClick () {
       .removeClass("animated slideInLeft")
       .addClass("animated slideOutLeft");
     return false;
+  });
+}
+
+function handleEscKey () {
+  $(document).on("keyup", function (e) {
+    if (e.keyCode === 27) {
+      var href = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(href).offset().top
+      }, 600);
+      $("#sidebar")
+        .removeClass("animated slideInLeft")
+        .addClass("animated slideOutLeft");
+      return false;
+    }
   });
 }
