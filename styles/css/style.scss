@@ -20,6 +20,15 @@ body {
   height: 100%;
 }
 
+html {
+  // min-height: 100%;
+  // position: relative;
+}
+
+body {
+  // margin-bottom: 30%;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -78,7 +87,6 @@ a {
 
 #projects {
   background-color: $light-blue;
-  margin: 0;
   padding: 80px 0;
 
   h2 {
@@ -105,40 +113,39 @@ a {
     }
   }
 
-  div {
-    margin: 0 auto;
-    padding: 0;
-
-    ul {
-      display: block;
-      margin: 0;
-      position: relative;
-      text-align: center;
-
-      li {
-        display: inline-block;
-        text-align: left;
-
-        img {
-          margin: 0;
-
-        }
-
-        div {
-          margin: 7px;
-          padding-bottom: 1px;
-
-        }
-      }
-    }
-  }
+  // div {
+  //   margin: 0 auto;
+  //   padding: 0;
+  //
+  //   ul {
+  //     display: block;
+  //     margin: 0;
+  //     position: relative;
+  //     text-align: center;
+  //
+  //     li {
+  //       display: inline-block;
+  //       text-align: left;
+  //
+  //       img {
+  //         margin: 0;
+  //
+  //       }
+  //
+  //       div {
+  //         margin: 7px;
+  //         padding-bottom: 1px;
+  //
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 #about {
   background-color: $light-white;
-  height: 70%;
+  // height: 70%;
   margin: 0;
-  // overflow: hidden;
   padding: 80px 0;
 
   h2 {
@@ -150,7 +157,7 @@ a {
     margin-after: .83em;
     margin-before: .83em;
     padding-bottom: 50px;
-    position: relative;
+    // position: relative;
     text-align: center;
 
     &after {
@@ -178,18 +185,9 @@ a {
 #contact {
   background-color: $dark-grey;
   font-size: 25px;
-  height: 30%;
 
-  div {
-    margin: 0 auto;
-    min-width: 300px;
-    padding: 80px 0;
-    text-align: center;
-    width: 50%;
-
-    strong {
-      color: $middle-blue;
-    }
+  strong {
+    color: $middle-blue;
   }
 }
 
@@ -202,7 +200,7 @@ a {
     z-index: 2;
   }
 
-  header {
+  #home {
     h1 {
 
       p {
@@ -226,7 +224,7 @@ a {
     z-index: 2;
   }
 
-  header {
+  #home {
     h1 {
 
       p {
@@ -250,7 +248,7 @@ a {
     z-index: 2;
   }
 
-  header {
+  #home {
     h1 {
 
       p {
@@ -263,16 +261,6 @@ a {
       }
     }
   }
-}
-
-.container-fluid {
-  height: 100%;
-  padding: 0;
-}
-
-.fill {
-  height: 100%;
-  min-height: 100%;
 }
 
 .dark-gray-background {
@@ -310,18 +298,23 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.thumbnail {
-  border-style: none;
-  margin: auto;
+.container-fluid {
+  min-height: 100%;
   padding: 0;
+}
+
+.fill {
+  height: 100%;
+  min-height: 100%;
 }
 
 .footer {
   bottom: 0;
   height: 30%;
-  width: 100%;
 }
 
-#footer {
-  height: 70%;
+.email {
+  font-size: 0.9em;
+  height: 2.5em;
+  width: 9em;
 }
