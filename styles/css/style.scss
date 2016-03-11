@@ -23,7 +23,6 @@ body {
 a {
   color: inherit;
   text-decoration: none !important;
-  // 
 }
 
 #sidebar {
@@ -307,4 +306,30 @@ a {
   font-size: .9em;
   height: 2.4em;
   width: 8.7em;
+}
+
+// typed.js stuff
+.typed-cursor {
+  -webkit-animation: blink .7s infinite;
+  -moz-animation: blink .7s infinite;
+  animation: blink .7s infinite;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
