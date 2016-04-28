@@ -211,8 +211,8 @@ a {
   width: 8.7em; }
 
 .typed-cursor {
-  -webkit-animation: blink .7s infinite;
   -moz-animation: blink .7s infinite;
+  -webkit-animation: blink .7s infinite;
   animation: blink .7s infinite;
   opacity: 1; }
 
